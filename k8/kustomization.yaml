@@ -1,0 +1,12 @@
+kind: Kustomization
+
+resources:
+  - db/secret.yaml
+  - db/persistent-volume.yaml
+  - db/persistent-volume-claim.yaml
+  - db/service.yaml
+  - db/deployment.yaml
+  - backend/service.yaml
+  - backend/deployment.yaml
+  - frontend/service.yaml
+  - frontend/deployment.yaml
